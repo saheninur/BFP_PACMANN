@@ -1,0 +1,30 @@
+CREATE FUNCTION <nama_function(param1, param2)>
+RETUN <data_type>
+LANGUAGE plqpsql
+as
+$$
+DECLARE
+  <variable>
+BEGIN
+  <body function>
+END
+$$;
+
+------
+
+CREATE FUNCTION belanja_setelah_diskon(jumlah_bayar INT, diskon INT)
+
+RETURN INT
+LANGUAGE plpsql
+
+AS
+$$
+DECLARE
+    diskon_in_percent float;
+    total_bayar float;
+BEGIN
+    diskon_in_percent = diskon::float/100
+    total_bayar = jumlah_pembayaran * (1-diskon-in_pencent)
+    RETURN total_bayar;
+END
+$$;
