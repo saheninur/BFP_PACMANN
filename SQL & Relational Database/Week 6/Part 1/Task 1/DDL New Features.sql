@@ -58,8 +58,7 @@ ADD CONSTRAINT fk_store FOREIGN KEY (store_id) REFERENCES public.stores(store_id
 
 -- Menambahkan kolom payment_status dan total_amount ke tabel orders
 ALTER TABLE public.orders
-ADD COLUMN payment_status varchar(20) DEFAULT 'Pending',
-ADD COLUMN total_amount numeric;
+ADD COLUMN payment_status varchar(20) DEFAULT 'Pending';
 
 
 
