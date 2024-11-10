@@ -1,0 +1,11 @@
+Repository ini berisi Rancangan Database untuk support aplikasi e-library. Folder ini terdiri dari beberapa bagian:
+1. Designing The Database
+Berisi rancangan datababase mulai dari penjelasan requirement table, relasi, bisnis rules, rancangan ERD dan implementasi 
+dalam bentuk DDL Script dan generate ERD dari postgressql
+
+2. Populating Dummy Dataset
+Berisi script untuk generate data dummy menggunakan Faker python, sekaligus insert data tersebut ke dalam table. 
+Selain itu, hasil dari dummy data ini juga di generate dalam bentuk CSV
+
+3. 5 objectives/questions
+Berisi query untuk retrieve dan analisis data berdasrkan pertanyaan yang di sudah di buat dalam rangka untuk mendapatkan insight data
